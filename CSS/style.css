@@ -218,17 +218,6 @@ figure p{
     background-color: #061130;
     border-radius: 25px;
 }
-#waves{
-    display: flex;
-    justify-content: space-between;
-}
-#waves figure{
-    width: 20%;
-    border: 2px solid black;
-}
-#waves figure img{
-    width: 100%;
-}
 @media screen and (max-width:1500px) {
     body{
         width: 95%;
