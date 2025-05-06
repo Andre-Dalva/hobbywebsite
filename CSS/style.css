@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Mansalva;
+    src: url("../Fonts/Mansalva-Regular.ttf");
+}
+@font-face {
+    font-family: WinkyRough;
+    src: url("../Fonts/WinkyRough-Light.ttf");
+}
+*{
+    box-sizing:border-box;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    color: white;
+    background-color: #061130;
+    margin: 0px;
+    width: 1500px;
+    margin: auto;
+}
+#mainPart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    font-family: Mansalva;
+}
+#title{
+    font-family: Mansalva;
+    font-weight: lighter;
+    font-size: 330%;
+    position: relative;
+    height: 0px;
+    top: 15%;
+    padding: 0px 0px 0px 6%;
+}
+#title a{
+    color: black;
+}
+#intro{
+    padding: 3%;
+    overflow: hidden;
+}
+#intro h2{
+    color: black;
+    position: relative;
+    height: 0px;
+    padding: 0% 5%;
+    top: 42%;
+}
+#intro img{
+    width: 145%;
+}
+#navigationOption{
+    display: flex;
+    flex-wrap: wrap;
+}
+.option{
+    width: 50%;
+}
+.optionTitle{
+    height: 0px;
+    position: relative;
+    color: white;
+    font-size: 110%;
+    top: 55%;
+    left: 8%;
+    width:fit-content;
+    padding: 0px;
+}
+.option:hover{
+    opacity: 0.85;
+}
+.bodyPart{
+    padding: 3%;
+    font-family: WinkyRough;
+}
+#musicPart{
+    background-color: #003070;
+}
+.hobbyTitle{
+    font-family: Mansalva;
+    font-weight: lighter;
+    font-size: 330%;
+    padding: 0px 0px 0px 3%;
+}
+.textRight{
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+}
+#musicType{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    text-align: center;
+}
+.artist{
+    font-size: 100%;
+    padding: 10px 25px;
+    background-color: #061130;
+    border-radius: 10em;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.artist:active{
+        background-color: aliceblue;
+}
+#gammingPart{
+    background-color: #972626;
+}
+#myGames{
+    display: grid;
+    width: 70%;
+    margin: 60px auto;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr;
+}
+#myGames img{
+    width: 100%;
+}
+figcaption{
+    position: relative;
+    height: 0px;
+    bottom: 20%;
+    left: 10%;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: opacity 0.5s;
+}
+figure p{
+    font-weight: bold;
+    position: relative;
+    height: 0px;
+    bottom: 50%;
+    padding: 3%;
+    opacity: 0;
+}
+#myGames figure:hover{
+    p{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    figcaption{
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    img{
+        filter: blur(1.9px);
+        transition: filter 0.5s;
+    }
+}
+#exploringPart{
+    background-color: #c4aa82;
+}
+#allPlaces{
+    display: grid;
+    width: 75%;
+    margin: 60px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+}
+.place{
+    border: 2px solid black;
+    width: 100%;
+    height: 230px;
+    border-radius: 70px;
+}
+.place{
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.place:hover{
+    cursor: pointer;
+    background-color: black;
+    background-size: 75%;
+    height: auto;
+    border-radius: 10px;
+    transform: scale(1.7);
+    transition: transform 1s, border-radius 1s, background-size 0.5s;
+}
+#firstPlace{
+    background-image: url("../Images/Places/ES.jpg");
+}
+#secondPlace{
+    background-image: url("../Images/Places/HU3.JPG");
+}
+#thirdPlace{
+    background-image: url("../Images/Places/PT4.jpg");
+}
+#fourthPlace{
+    background-image: url("../Images/Places/SK4.jpg");
+}
+#fifthPlace{
+    background-image: url("../Images/Places/ST2.jpg")
+}
+#sixthPlace{
+    background-image: url("../Images/Places/RO.jpg");
+    background-size: 111%;
+}
+#seventhPlace{
+    background-image: url("../Images/Places/HU.jpg");
+}
+#heigthPlace{
+    background-image: url("../Images/Places/ES1.jpg");
+    background-size: 95%;
+}
+#swimmingPart{
+    background-color: #9b55a1;
+}
+#swimmingTextBox{
+    font-size: larger;
+    text-align: justify;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #061130;
+    border-radius: 25px;
+}
+#waves{
+    display: flex;
+    justify-content: space-between;
+}
+#waves figure{
+    width: 20%;
+    border: 2px solid black;
+}
+#waves figure img{
+    width: 100%;
+}
+@media screen and (max-width:1500px) {
+    body{
+        width: 95%;
+    }
+}
+@media  screen and (max-width: 1100px) {
+    #mainPart{
+        grid-template-columns: 1fr;
+    }    
+    #navigationOption{
+        width: 85%;
+        margin: auto;
+    }
+    #intro{
+        background-size: 145%;
+        margin: 0em 1.5em;
+    }
+    .option img{
+        width: 100%;
+    }
+    .textRight{
+        width: 100%;
+    }
+
+    #myGames{
+        width: 85%;
+    }
+    #allPlaces{
+        width: 90%;
+        margin: 40px auto;
+        grid-template-columns:  1fr 1fr;
+        gap: 1.5em;
+    }
+    .place{
+        width: 100%;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #intro{
+        margin: 0px 0.5em;
+        padding: 0px;
+    }
+    #navigationOption{
+        background-size: cover;
+        width: 100%;
+    }
+    .subtitle{
+        font-size: 105%;
+    }
+
+    #myGames{
+        width: 100%;
+    }
+    #myGames img{
+        height: 100%;
+    }
+    figcaption{
+        bottom: 40%;
+    }
+    #myGames figure:hover{
+        p{
+            opacity: 0;
+        }
+        figcaption{
+            opacity: 1;
+        }
+        img{
+            filter: blur(0px);
+        } 
+    }
+
+    #allPlaces{
+        width: 90%;
+        margin: 40px auto;
+        grid-template-columns:  1fr 1fr;
+        gap: 1.5em;
+    }
+    .place{
+        width: 100%;
+        height: 200px;
+    }
+}
